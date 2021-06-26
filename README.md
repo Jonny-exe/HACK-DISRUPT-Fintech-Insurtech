@@ -19,4 +19,4 @@ Welcome to Hack & Disrupt! The event that connects entrepreneurs to reimagine fi
 - https://github.com/protea-earth/carbon_footprint
 - http://css.umich.edu/factsheets/carbon-footprint-factsheet
 - https://www.climatekuul.com/
-- 
+- https://www.kaggle.com/search?q=co2+in%3Adatasets
