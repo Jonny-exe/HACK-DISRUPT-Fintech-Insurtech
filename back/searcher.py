@@ -12,6 +12,15 @@ def search(words, i=0):
         return None
     if type(words) == str:
         words = words.split(" ")
+        result = []
+        for i in words:
+            try:
+                int(i)
+            except ValueError:
+                result.append(i)
+        words = result
+    print(words)
+
 
     # Food
     category = "Comida"
@@ -76,7 +85,7 @@ def search(words, i=0):
     a = check(words, onlineshopping, category, average=onlineshopping_exact["Average"])
     if a != None:
         return a, category
-    # return search([word[:int(len(word) / 2)] for word in words], i+1)
+
     return None, None
 
 
