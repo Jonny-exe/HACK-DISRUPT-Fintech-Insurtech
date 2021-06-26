@@ -1261,7 +1261,7 @@ electricity = [
 ]
 
 
-clothes_exact = {"Average" : 0}
+clothes_exact = {"Average" : 7}
 clothes = [
     "anillo",
     "arete",
