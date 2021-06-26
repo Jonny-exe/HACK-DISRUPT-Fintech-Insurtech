@@ -59,17 +59,18 @@ food = [
     "amaranto       ",
     "arroz          ",
     "avena          ",
-    "tortillas de ma",
+    "tortillas",
     "pan integral   ",
-    "fideos/pasta   ",
-    "cereales de har",
+    "fideos",
+    "pasta",
+    "cereales",
     "buñuelos       ",
     "muffins        ",
-    "tortillas de ha",
+    "tortillas",
     "churros        ",
     "pan blanco     ",
     "pan dulce      ",
-    "cereales con az",
+    "cereales",
     "bolillos       ",
     "maracuyá       ",
     "arepas         ",
@@ -83,7 +84,7 @@ food = [
     "mango          ",
     "manzana        ",
     "melón          ",
-    "naranja/china  ",
+    "naranja",
     "nectarina      ",
     "papaya         ",
     "pasas          ",
@@ -94,7 +95,8 @@ food = [
     "aguacate       ",
     "coco           ",
     "berenjena      ",
-    "brécol/brocoli ",
+    "brécol",
+    "brocoli ",
     "camote         ",
     "cebolla        ",
     "chayote        ",
@@ -111,17 +113,18 @@ food = [
     "pimentón       ",
     "plátanos       ",
     "repollo        ",
-    "tomate/tomatill",
+    "tomate",
+    "tomatillo",
     "yautía         ",
     "yuca           ",
     "zanahoria      ",
     "tofu           ",
-    "pavo o guajolot",
+    "pavo",
     "pollo          ",
     "pescado        ",
     "mariscos       ",
     "huevos         ",
-    "mantequilla de ",
+    "mantequilla",
     "nueces         ",
     "chorizo        ",
     "menudo         ",
@@ -130,22 +133,24 @@ food = [
     "margarina      ",
     "aceite         ",
     "manteca        ",
-    "olivas/aceituna",
-    "salsa/aderezo d",
+    "olivas",
+    "aceitunas",
+    "salsa",
     "aguacate       ",
     "mantequilla    ",
-    "queso crema    ",
+    "crema",
+    "queso    ",
 ]
 
 #
 #
 #
-food_restaurants_exact = {
+restaurants_exact = {
     "Average": 2.07, # average meal
 }
 
 
-food_restaurants = [
+restaurants = [
     "restaurante",
     "bar",
     "Applebee's",
@@ -839,7 +844,7 @@ transport = [
     "albea          ",
     "barchetta      ",
     "bravo          ",
-    "bravo & brava  ",
+    "brava",
     "cinquecento    ",
     "coupe          ",
     "croma          ",
@@ -849,7 +854,6 @@ transport = [
     "duna           ",
     "egea           ",
     "fiorino        ",
-    "fiorino nuovo  ",
     "freemont       ",
     "fullback       ",
     "grande punto   ",
@@ -1261,7 +1265,11 @@ electricity = [
 ]
 
 
-clothes_exact = {"Average" : 7}
+#
+#
+#
+clothes_exact = {"Average" : 7.0}  # average 7kg CO2 per item of clothing
+
 clothes = [
     "anillo",
     "arete",
@@ -1327,7 +1335,7 @@ clothes = [
     "gemelos",
     "smoking",
     "vestido",
-    "own - bata",
+    "bata",
     "guantes",
     "sombrero",
     "tacones altos",
@@ -1337,15 +1345,17 @@ clothes = [
     "jersey",
     "bragas",
     "camisón",
-    "kirt - mini-falda",
+    "skirt",
+    "mini-falda",
     "mono",
     "calzoncillos",
     "pijama",
     "impermeable",
     "sandalias",
     "bufanda",
-    "amisa",
+    "camisa",
     "zapatos",
+    "pantalones",
     "pantalones cortos",
     "falda",
     "zapatillas",
@@ -1367,3 +1377,5 @@ clothes = [
     "botas de goma",
     "cremallera",
 ]
+
+# EOF
