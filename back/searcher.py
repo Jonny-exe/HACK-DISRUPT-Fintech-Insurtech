@@ -14,7 +14,7 @@ def search(words, i=0):
         words = words.split(" ")
 
     # Food
-    category = "food"
+    category = "Comida"
     a = check(words, food_exact, category, exact=True)
     if a != None:
         return a, category
@@ -24,7 +24,7 @@ def search(words, i=0):
         return a, category
 
     # Transport
-    category = "transport"
+    category = "Transporte"
     a = check(words, transport_exact, category, exact=True)
     if a != None:
         return a, category
@@ -34,7 +34,7 @@ def search(words, i=0):
         return a, category
 
     # Transport aereo
-    category = "transport_aereo"
+    category = "Transporte aereo"
     a = check(words, transport_aereo_exact, category, exact=True)
     if a != None:
         return a, category
@@ -46,19 +46,19 @@ def search(words, i=0):
         return a, category
 
     # Electricity
-    category = "electricity"
+    category = "Electricidad"
     a = check(words, electricity, category, average=electricity_exact["Average"])
     if a != None:
         return a, category
 
     # Clothes
-    category = "clothes"
+    category = "Ropa"
     a = check(words, clothes, category, average=clothes_exact["Average"])
     if a != None:
         return a, category
 
     # Restaurants
-    category = "restaurants"
+    category = "Restaurantes"
     a = check(words, restaurants_exact, category, exact=True)
     if a != None:
         return a, category
@@ -68,7 +68,7 @@ def search(words, i=0):
         return a, category
 
     # Online shopping
-    category = "online shopping"
+    category = "Compras online"
     a = check(words, onlineshopping_exact, category, exact=True)
     if a != None:
         return a, category
