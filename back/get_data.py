@@ -6,12 +6,14 @@ from data import (
     electricity,
     clothes,
     restaurants,
+    onlineshopping,
     food_exact,
     transport_exact,
     electricity_exact,
     clothes_exact,
     transport_aereo_exact,
     restaurants_exact,
+    onlineshopping_exact
 )
 
 
@@ -51,6 +53,7 @@ def get_classes():
         arr_strip(electricity),
         arr_strip(clothes),
         arr_strip(restaurants),
+        arr_strip(onlineshopping),
     )
 
 
@@ -62,6 +65,7 @@ def get_exact_classes():
         arr_strip(electricity_exact),
         arr_strip(clothes_exact),
         arr_strip(restaurants_exact),
+        arr_strip(onlineshopping_exact),
     )
 
 
