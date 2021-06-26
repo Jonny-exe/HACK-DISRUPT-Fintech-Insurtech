@@ -1,4 +1,4 @@
-",#
+#
 # CO2 Emission Data
 #
 
@@ -830,10 +830,54 @@ transport = [
     "ulysse",
 ]
 
+
 #
 #
 #
-electricity_exact = {"Average" : 0}
+# Amazon supply chain:
+# 0.1289 kg CO2e per dollar (USD).
+# 3,300,000 boxes/day * 365 days/year / 325,000,000 Americans = 3.70 boxes/American.
+# 3.70 boxes/year * $47 / box = ~$173.90/year * 0.1289 kg / $1 USD= 22.41 kg CO2/year.
+# 22.41 kg CO2/year / 3.70 boxes/year = 22.41/3.70 kg CO2/box = 6.06 kg CO2/box
+onlineshopping_exact = {"Average" : 6.06}
+#
+onlineshopping = [
+    "online shopping",
+    "online shop",
+    "Amazon",
+    "Aliexpress",
+    "Ali-express",
+    "Ali express",
+    "American Eagle Outfitters",
+    "Anthropologie",
+    "ASOS",
+    "Boohoo",
+    "eBay",
+    "Forever 21",
+    "Lululemon",
+    "Modcloth",
+    "Mystery Tackle Box",
+    "Nasty Gal",
+    "PrettyLittleThing",
+    "Purple mattress",
+    "Sephora",
+    "Showpo",
+    "Target",
+    "Urban Outfitters",
+    "Wayfair",
+    "Zara",
+]
+
+#
+#
+#
+# For each kilowatt hour generated in the U.S., an average of 0.953 pounds of CO2e is released at the power plant.
+# Electricity:
+# Electric bill - 11,698 kwh/year = average energy consumption / household.
+# the U.S. average is 13.27 cents per kilowatt hour (kwh), 0.62 kilogramCO2 / kwh.
+# 11,698 kwh/year * 0.62 kgCO2/kwh = 7,252.76 kg CO2/year.
+# 604.4kg CO2/month/household, average monthly electricity utility bill is 604.4kg CO2
+electricity_exact = {"Average" : 604.4}
 #
 electricity = [
     "energía",
