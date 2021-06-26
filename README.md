@@ -12,3 +12,11 @@ Bienvenidos a Hack & Disrupt! El evento que conecta emprendedores para reimagina
 
 Welcome to Hack & Disrupt! The event that connects entrepreneurs to reimagine finance and insurance.
 
+# Fuentes de datos, Data sources
+- https://carbonfund.org/calculation-methods/
+- https://www.conservation.org/carbon-footprint-calculator#/
+- https://github.com/lenaromanenko/food_carbon_footprint
+- https://github.com/protea-earth/carbon_footprint
+- http://css.umich.edu/factsheets/carbon-footprint-factsheet
+- https://www.climatekuul.com/
+- 
