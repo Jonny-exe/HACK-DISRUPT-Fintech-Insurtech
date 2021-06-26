@@ -1,9 +1,9 @@
 const URL = "http://localhost:5000/file"
-console.log("HELLO")
+const chart = document.getElementById('myChart')
+//chart.style.display = "none"
 const send = async () => {
    const {data} = await axios.post(URL, `text=${inputText.value}`)
    console.log(data)
-
 
    let trs = ""
    for (let i = 0; i < data.length; i++) {
@@ -43,39 +43,19 @@ const send = async () => {
 
    let l = []
    let d = []
-   console.log(labels)
    const keys = Object.keys(labels)
 
    for (let key in keys) {
       key = keys[key]
       l.push(key)
       d.push(labels[key])
-      console.log(key, labels[key])
    }
-   console.log(l, d)
-   const da = {
-      labels: l,
-        datasets: [{
-               label: 'Categories',
-               data: d,
-               backgroundColor: [
-                 'rgb(255, 99, 132)',
-                 'rgb(54, 162, 235)',
-                 'rgb(255, 205, 86)'
-               ],
-               hoverOffset: 4
-             }]
-   };
 
-   const config = {
-      type: 'doughnut',
-      data: da,
-   };
-
-   var myChart = new Chart(
-      document.getElementById('myChart'),
-      config
-   );
+   chart.style.display = "inherit"
+   myChart.data.datasets[0].data = d
+   myChart.data.labels = l
+   console.log(myChart.data)
+   myChart.update()
 
 }
 const inputText = document.getElementById("input-text")
@@ -83,4 +63,32 @@ const submitButton = document.getElementById("submit-button")
 const table = document.getElementById("table")
 
 submitButton.addEventListener("click", send)
+
+
+const data = {
+   labels: ["hello"],
+   datasets: [{
+      label: 'Categories',
+      data: [1],
+      backgroundColor: [
+         //'rgb(255, 99, 132)',
+         //'rgb(54, 162, 235)',
+         //'rgb(255, 205, 86)'
+         "blue",
+         "red",
+         "green"
+      ],
+      hoverOffset: 4
+   }]
+};
+
+const config = {
+     type: 'doughnut',
+     data: data,
+};
+
+var myChart = new Chart(
+   chart,
+   config
+);
 

@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 from get_data import get_classes, get_exact_classes
 
-food, transport, transport_aereo, electricity, clothes, restaurant_exact = get_classes()
-food_exact, transport_exact, transport_aereo_exact, electricity_exact, clothes_exact, restaurant_exact = (
+food, transport, transport_aereo, electricity, clothes, restaurants = get_classes()
+food_exact, transport_exact, transport_aereo_exact, electricity_exact, clothes_exact, restaurants_exact = (
     get_exact_classes()
 )
 
@@ -69,7 +69,7 @@ def search(words, i=0):
         return a, category
 
     # return search([word[:int(len(word) / 2)] for word in words], i+1)
-    return None
+    return None, None
 
 
 def check(words, category, name, average=0, exact=False):
