@@ -14,7 +14,7 @@ const send = async () => {
          <tr>
          <td>${a["product"]}</td>
          <td>${a["category"]}</td>
-         <td>${a["co2"]}</td>
+         <td>${a["co2"]} kg</td>
       </tr>
       `
       trs = trs + tr
@@ -23,7 +23,7 @@ const send = async () => {
       <tr>
       <td>Suma total</td>
       <td>Categorias mixtas</td>
-      <td>${Math.round(sum)}</td>
+      <td>${Math.round(sum)} kg</td>
    </tr>
    `
    trs = trs + tr
@@ -88,7 +88,13 @@ const data = {
          //'rgb(255, 205, 86)'
          "blue",
          "red",
-         "green"
+         "green",
+         "yellow",
+         "cyan",
+         "magenta",
+         "darkblue",
+         "darkgreen",
+         "grey"
       ],
       hoverOffset: 4
    }]
