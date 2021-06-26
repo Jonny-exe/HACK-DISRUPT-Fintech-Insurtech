@@ -1,6 +1,6 @@
 const URL = "http://localhost:5000/file"
 const chart = document.getElementById('myChart')
-//chart.style.display = "none"
+chart.style.display = "none"
 const send = async () => {
    const {data} = await axios.post(URL, `text=${inputText.value}`)
    console.log(data)
