@@ -8,7 +8,6 @@ amazon lampara
 bus viaje
 McDonalds 3 hamburguesas 2 bebidas
 vueling viaje
-iberdrola electricidad
 factura luz Endesa 05/2021
 Eroski pan 9843759
 Bilbao Taxi 6006234
