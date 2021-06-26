@@ -59,6 +59,7 @@ He llamado mi proyecto Hack-CO2 y he hecho un pequeño logotipo para el proyecto
 
 # Instalacion, Installation
 
-- como instalar
+Sigue estas instrucciones, Follow these instructions
+[Instrucciones, Instructions](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/tree/master/self-host)
 
 :heart: _hack & disrupt !_
