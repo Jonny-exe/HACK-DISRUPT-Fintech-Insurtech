@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
-from new_data import food, transport, electricity, clothes
-
-
+from data import food, transport, transport_aereo, electricity, clothes, food_exact, transport_exact, electricity_exact, clothes_exact, transport_aereo_exact
 def get_data():
     # X observation, class
     # Y action, result
@@ -18,6 +15,9 @@ def get_data():
 
 def get_classes():
     return food, transport, electricity, clothes
+
+def get_exact_classes():
+    return food_exact, transport_exact, electricity_exact, clothes_exact
 
 def create_data():
     result = []
