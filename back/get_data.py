@@ -1,5 +1,20 @@
 #!/usr/bin/python3
-from data import food, transport, transport_aereo, electricity, clothes, food_exact, transport_exact, electricity_exact, clothes_exact, transport_aereo_exact
+from data import (
+    food,
+    transport,
+    transport_aereo,
+    electricity,
+    clothes,
+    restaurants,
+    food_exact,
+    transport_exact,
+    electricity_exact,
+    clothes_exact,
+    transport_aereo_exact,
+    restaurants_exact,
+)
+
+
 def get_data():
     # X observation, class
     # Y action, result
@@ -13,11 +28,42 @@ def get_data():
     Y = [0] * len(food) + [1] * len(transport) + [2] * len(electricity)
     return X, Y
 
+
+def arr_strip(arr):
+    if type(arr) == list:
+        result = []
+        for i in arr:
+            result.append(i.strip(""))
+        return result
+    else:
+        result = {}
+        for i in arr:
+            i_new = i.strip("")
+            result[i_new] = arr[i]
+        return result
+
+
 def get_classes():
-    return food, transport, electricity, clothes
+    return (
+        arr_strip(food),
+        arr_strip(transport),
+        arr_strip(transport_aereo),
+        arr_strip(electricity),
+        arr_strip(clothes),
+        arr_strip(restaurants),
+    )
+
 
 def get_exact_classes():
-    return food_exact, transport_exact, electricity_exact, clothes_exact
+    return (
+        arr_strip(food_exact),
+        arr_strip(transport_exact),
+        arr_strip(transport_aereo_exact),
+        arr_strip(electricity_exact),
+        arr_strip(clothes_exact),
+        arr_strip(restaurants_exact),
+    )
+
 
 def create_data():
     result = []

@@ -19,3 +19,7 @@ div {
     height: 50%;
     width: 90%;
 }
+
+table {
+    width: 90% !important;
+}
