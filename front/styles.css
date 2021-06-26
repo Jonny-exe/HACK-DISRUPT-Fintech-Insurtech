@@ -22,7 +22,8 @@ table {
     width: 90% !important;
 }
 
-/*canvas {*/
-    /*height: 300px !important;*/
-    /*width: 300px !important;*/
-/*}*/
+canvas {
+    transform: scale(0.7);
+    font-size: 100px !important;
+}
+

@@ -6,16 +6,27 @@ const send = async () => {
    console.log(data)
 
    let trs = ""
+   let sum = 0
    for (let i = 0; i < data.length; i++) {
       a = data[i]
+      sum += a["co2"]
       let tr = `
          <tr>
          <td>${a["product"]}</td>
+         <td>${a["category"]}</td>
          <td>${a["co2"]}</td>
       </tr>
       `
       trs = trs + tr
    }
+   let tr = `
+      <tr>
+      <td>Suma total</td>
+      <td>Categorias mixtas</td>
+      <td>${Math.round(sum)}</td>
+   </tr>
+   `
+   trs = trs + tr
 
    let body = `
 <tbody>
@@ -26,6 +37,7 @@ const send = async () => {
 <thead>
    <tr>
       <th scope="col">Producto</th>
+      <th scope="col">Categoria</th>
       <th scope="col">CO2 (KG)</th>
    </tr>
    ${body}
@@ -91,4 +103,3 @@ var myChart = new Chart(
    chart,
    config
 );
-

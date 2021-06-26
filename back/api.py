@@ -26,6 +26,7 @@ def file():
     for word in words:
         search_result, category = search(word)
         #              name                   kg co2            category
+        print("category: ", category)
         result.append({"product": word, "co2": search_result, "category": category})
     return json.dumps(result)
 
