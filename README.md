@@ -19,6 +19,10 @@ El reto que mas me ha llamado era el reto de calcular la huella de carbono.
 - https://es.wikipedia.org/wiki/Huella_de_carbono
 - https://en.wikipedia.org/wiki/Carbon_footprint
 
+He llamado mi proyecto Hack-CO2 y he hecho un pequeño logotipo para el proyecto.
+
+![logo](logo/HaCO2k-logo.100x100.png)
+
 # Fuentes de datos, Data sources
 
 - https://carbonfund.org/calculation-methods/
