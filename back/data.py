@@ -1,5 +1,15 @@
+#
+# CO2 Emission Data
+#
+
+
+# Food choices / nutrition:
+# 1.7 US tons = 1,542.21406 kilograms of CO2/year - vegetarian.
+# 2.5 US tons = 2,267.96185 kilograms of CO2/year - average. 6.21359410958904 kg/day per person, 2.07kg CO2/meal at 3 meals per day,
+# 3.3 US tons = 2,993.70964 kilograms of CO2/year - meat lover.
+
 food_exact = {
-    "Average": 1.5,
+    "Average": 2.07, # average meal
     "Pan": 1.4,
     "Maiz": 1.1,
     "Cerveza": 1.1,
@@ -45,6 +55,7 @@ food_exact = {
 }
 
 food = [
+    "comida",
     "amaranto       ",
     "arroz          ",
     "avena          ",
@@ -124,6 +135,113 @@ food = [
     "aguacate       ",
     "mantequilla    ",
     "queso crema    ",
+]
+
+#
+#
+#
+food_restaurants_exact = {
+    "Average": 2.07, # average meal
+}
+
+
+food_restaurants = [
+    "restaurante",
+    "bar",
+    "Applebee's",
+    "Arby's",
+    "Auntie Anne's",
+    "Baton Rouge",
+    "BeaverTails",
+    "Big Smoke Burger",
+    "Bonchon Chicken",
+    "Buffalo Wild Wings",
+    "Burger King",
+    "Cafe Coffee Day",
+    "Carl's Jr.",
+    "Charleys Philly Steaks",
+    "Chick-Fil-A",
+    "Chili's",
+    "Chipotle Mexican Grill",
+    "Church's Chicken",
+    "Cora",
+    "Costa Coffee",
+    "Crepes & Waffles",
+    "Dairy Queen",
+    "Délifrance",
+    "Denny's",
+    "Dôme",
+    "Din Tai Fung",
+    "Domino's Pizza",
+    "Dunkin' Donuts",
+    "Earls Kitchen + Bar",
+    "East Side Mario's",
+    "Five Guys",
+    "Freshly Chopped",
+    "Gloria Jean's Coffees",
+    "Hamburguesas El Corral",
+    "Hard Rock Cafe",
+    "Hardee's",
+    "Harvey's",
+    "Hooters",
+    "IHOP",
+    "Jack Astor's Bar and Grill",
+    "Jack in the Box",
+    "Jimmy John's",
+    "Joe & The Juice",
+    "Jollibee",
+    "Juan Valdez Cafe",
+    "The Keg",
+    "Kenny Rogers Roasters",
+    "KFC",
+    "Krispy Kreme",
+    "Little Caesars",
+    "Long John Silver's",
+    "Loving Hut",
+    "Marrybrown",
+    "McDonald's",
+    "McDonalds",
+    "MK Restaurant",
+    "MOS Burger",
+    "Nando's",
+    "Olive Garden",
+    "Outback Steakhouse",
+    "Panda Express",
+    "Panera Bread",
+    "Papa John's Pizza",
+    "Paris Baguette",
+    "Perkins Restaurant and Bakery",
+    "PizzaExpress",
+    "The Pizza Company",
+    "Pizza Hut",
+    "Planet Hollywood",
+    "Pollo Campero",
+    "Ponderosa and Bonanza Steakhouses",
+    "Popeyes",
+    "Quiznos",
+    "Rainforest Cafe",
+    "Red Lobster",
+    "Red Robin",
+    "Ruby Tuesday",
+    "Secret Recipe",
+    "Shakey's Pizza",
+    "Sizzler",
+    "Sonic Drive-In",
+    "Starbucks",
+    "Steak 'n Shake",
+    "Subway",
+    "Swensen's",
+    "TGI Friday's",
+    "Taco Bell",
+    "Telepizza",
+    "Tim Hortons",
+    "Tony Roma's",
+    "Waffle House",
+    "Wendy's",
+    "Wendys",
+    "Whataburger",
+    "White Castle",
+    "Yoshinoya",
 ]
 
 #
@@ -324,15 +442,58 @@ transport_aereo = [
 
 #
 #
-#
-transport_exact = {"Average" : 0}
+# all transportation except air transporation
+transport_exact = {
+    "Average" : 0.22*30,  # most typical transport is car, so we use car data, average 30km per trip
+    #
+    #
+    #
+    # Transport: Total_emissions: kg CO2 per meaningful unit of distance
+    "gasolina": 2.348*25, # Gasoline releases 19.6 pounds of CO2 per gallon when burned, 19.6/3.785411784*0.45359237 == 2.34859797541117 kg CO2 per 1l gasoline, average tank filling 25l
+    "diesel": 2.684*25, # Gasoline releases 22.4 pounds of CO2 per gallon when burned, 22.4/3.785411784*0.45359237 == 2.68411197189848 kg CO2 per 1l gasoline, average tank filling 25l
+    # gasolineras
+    "Repsol": 2.5*25, # gasolina
+    "Cepsa": 2.5*25, # gasolina
+    "Galp": 2.5*25, # gasolina
+    "Ballenoil": 2.5*25, # gasolina
+    "Avia": 2.5*25, # gasolina
+    "Shell": 2.5*25, # gasolina
+    "BP": 2.5*25, # gasolina
+    "FastFuel": 2.5*25, # gasolina
+    "Nafte": 2.5*25, # gasolina
+
+    #
+    #
+    #
+    # viajes en taxi, etc
+    # The average passenger car emits 0.78 pounds of CO2 per mile driven. 0.78*0.45359237/1.609344 == 0.219842400754593 kg CO2 per 1km driven
+    "taxi": 0.22*10, # average trip length 10km
+    "Uber": 0.22*10, # average trip length 10km
+    "Lyft": 0.22*10, # average trip length 10km
+    "Rideshare": 0.22*10, # average trip length 10km
+    "BlaBlaCar": 0.22*10, # average trip length 10km
+    "BlaBlaBus": 0.22*10, # average trip length 10km
+
+    #
+    #
+    #
+    # According to US EPA (2015):
+    # Intercity rail (i.e., Amtrak) generates 0.14 kg CO2/passenger-mile
+    # Commuter rail generates 0.17 kg CO2/passenger-mile
+    # Transit rail (i.e., subway, metro, tram) generates 0.12 kg CO2/passenger-mile, 0.12/1.609344 == 0.07456454306848 kg CO2 per 1km train ride
+    # Bus generates 0.06 kg CO2/passenger-mile
+    # public transport, metro, tramvia, bus
+    # 0.161 kg of CO2 per mile (public transportation), 0.161/1.609344 == 0.1 kg CO2 per 1km public transport
+    "Bilbobus": 0.1*10, # 10km average distance
+    "Tramvia": 0.1*10, # 10km average distance
+    "metro": 0.1*10, # 10km average distance
+    "bus": 0.1*10, # 10km average distance
+    "tren": 0.0745*100, # 100km average distance
+}
 
 transport = [
-    "bus            ",
-    "avion          ",
     "barco          ",
     "coche          ",
-    "taxi           ",
     "abarth         ",
     "acura          ",
     "csx            ",
