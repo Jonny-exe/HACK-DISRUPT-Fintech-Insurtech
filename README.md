@@ -48,7 +48,14 @@ He llamado mi proyecto Hack-CO2 y he hecho un pequeño logotipo para el proyecto
 # Presentacion de resultados, Results demo
 
 - video(s)
-- screenshots
+- screenshots:
+  Ponemos los movimientos de cuenta. Puede tener cualquier formato siempre que cada producto/servicio este separado con una linea nueva
+  ![input image](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/blob/master/images/input.png)
+  
+  Si le damos al boton de Calcular emisiones de CO2 veremos estos resultados:
+  ![reslut](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/blob/master/images/result.png)
+  ![donought](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/blob/master/images/circle.png)
+
 
 # Instalacion, Installation
 
