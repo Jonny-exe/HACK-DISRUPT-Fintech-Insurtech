@@ -1,0 +1,44 @@
+#
+#
+#
+# Transport: Total_emissions: kg CO2 per meaningful unit of distance
+"gasolina": 2.348*25, # Gasoline releases 19.6 pounds of CO2 per gallon when burned, 19.6/3.785411784*0.45359237 == 2.34859797541117 kg CO2 per 1l gasoline, average tank filling 25l
+"diesel": 2.684*25, # Gasoline releases 22.4 pounds of CO2 per gallon when burned, 22.4/3.785411784*0.45359237 == 2.68411197189848 kg CO2 per 1l gasoline, average tank filling 25l
+# gasolineras
+"Repsol": 2.5*25, # gasolina
+"Cepsa": 2.5*25, # gasolina
+"Galp": 2.5*25, # gasolina
+"Ballenoil": 2.5*25, # gasolina
+"Avia": 2.5*25, # gasolina
+"Shell": 2.5*25, # gasolina
+"BP": 2.5*25, # gasolina
+"FastFuel": 2.5*25, # gasolina
+"Nafte": 2.5*25, # gasolina
+
+#
+#
+#
+# viajes en taxi, etc
+# The average passenger car emits 0.78 pounds of CO2 per mile driven. 0.78*0.45359237/1.609344 == 0.219842400754593 kg CO2 per 1km driven
+"taxi": 0.22*10, # average trip length 10km
+"Uber": 0.22*10, # average trip length 10km
+"Lyft": 0.22*10, # average trip length 10km
+"Rideshare": 0.22*10, # average trip length 10km
+"BlaBlaCar": 0.22*10, # average trip length 10km
+"BlaBlaBus": 0.22*10, # average trip length 10km
+
+#
+#
+#
+# According to US EPA (2015):
+# Intercity rail (i.e., Amtrak) generates 0.14 kg CO2/passenger-mile
+# Commuter rail generates 0.17 kg CO2/passenger-mile
+# Transit rail (i.e., subway, metro, tram) generates 0.12 kg CO2/passenger-mile, 0.12/1.609344 == 0.07456454306848 kg CO2 per 1km train ride
+# Bus generates 0.06 kg CO2/passenger-mile
+# public transport, metro, tramvia, bus
+# 0.161 kg of CO2 per mile (public transportation), 0.161/1.609344 == 0.1 kg CO2 per 1km public transport
+"Bilbobus": 0.1*10, # 10km average distance
+"Tramvia": 0.1*10, # 10km average distance
+"metro": 0.1*10, # 10km average distance
+"bus": 0.1*10, # 10km average distance
+"tren": 0.0745*100, # 100km average distance
