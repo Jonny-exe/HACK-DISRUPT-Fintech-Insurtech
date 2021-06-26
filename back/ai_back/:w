@@ -1,0 +1,72 @@
+#!/usr/bin/python3
+import torch
+import torch.nn as nn
+
+# Loss and optimizier
+import torch.optim as optim
+from torch.utils.data import DataLoader, Dataset
+from get_data import get_data
+from net import Feedforward
+import numpy as np
+
+
+class DatasetValue(Dataset):
+    def __init__(self, x, y):
+        self.X = np.array(x)
+        self.Y = np.array(y)
+
+    def __len__(self):
+        return self.X.shape[0]
+
+    def __getitem__(self, idx):
+        return (self.X[idx], self.Y[idx])
+
+
+model = Feedforward(2, 10)
+criterion = torch.nn.BCELoss()
+optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+
+X, Y = get_data()
+trainsetXY = DatasetValue(X, Y)
+train_loader = DataLoader(trainsetXY, batch_size=256, shuffle=True, drop_last=True)
+model.train()
+
+print("DONE")
+epoch = 20
+for epoch in range(epoch):
+    optimizer.zero_grad()
+    # Forward pass
+    y_pred = model(x_train)
+    # Compute Loss
+    loss = criterion(y_pred.squeeze(), y_train)
+
+    # Backward pass
+    loss.backward()
+    optimizer.step()
+
+for epoch in range(EPOCHS):
+    running_loss = 0.0
+    print(f"{epoch + 1} / {EPOCHS}")
+    for i, (data, target) in enumerate(train_loader, 0):
+        target = target.unsqueeze(-1)
+        if device == "cuda":
+            data, target = data.to(device), target.to(device)
+        data, target = data.to(torch.float32), target.to(torch.float32)
+
+        optimizer.zero_grad()
+        data = data.reshape([256, 1, 8, 8])
+        outputs = model(data)
+        outputs = outputs.reshape([256, 64, 1])
+
+        loss = criterion(outputs, target)
+        loss.backward()
+        optimizer.step()
+
+        # running_loss += loss.time()
+
+        # if i % 2000 == 1999:
+        # print('[%d, %5d] loss: %.3f' %
+        # (epoch + 1, i + 1, running_loss / 2000))
+        running_loss = 0.0
+torch.save(model.state_dict(), "models/value.pth")
+print("Finished training")

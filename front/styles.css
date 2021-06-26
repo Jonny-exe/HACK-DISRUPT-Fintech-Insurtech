@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+textarea {
+    /* margin: 1%; */
+    /* width: 90%; */
+    /* white-space: pre-wrap; */
+    height: 80% !important;
+    margin: 1%;
+}
+
+div {
+    height: 50%;
+    width: 90%;
+}
