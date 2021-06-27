@@ -67,6 +67,9 @@ Este tipo de sistema está basado puramente en información. Por esa razón cuan
 ## Demostración
 
 La demostración completa está en un video llamado `demostracion.mp4`. 
+
+También se puede leer en un fichero PDF, [Hack-CO2.pdf](Hack-CO2.pdf). 
+
 Aun así voy a dejar aquí un breve resumen del funcionamiento de mi implementación.
 
 La parte visual de la solución es el front-end, una página web. 
