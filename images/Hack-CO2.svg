@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1134.9006"
+   height="1104.8618"
+   viewBox="0 0 300.27579 292.32802"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   sodipodi:docname="Hack-CO2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.6537037"
+     inkscape:cx="542.29462"
+     inkscape:cy="608.07365"
+     inkscape:window-width="1848"
+     inkscape:window-height="1027"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path29105" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path29102" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-110.59609,17.83546)">
+    <g
+       id="g95701"
+       transform="translate(97.629144,-54.323985)">
+      <rect
+         style="fill:#f2f2f2;stroke:none;stroke-width:1.65012"
+         id="rect892"
+         width="139.18466"
+         height="65.722839"
+         x="93.512512"
+         y="36.488525"
+         ry="5.3758216" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="104.48846"
+         y="65.65509"
+         id="text4658"><tspan
+           sodipodi:role="line"
+           id="tspan4656"
+           style="stroke-width:0.264583"
+           x="104.48846"
+           y="65.65509">Front-end</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="104.48846"
+           y="78.884216"
+           id="tspan4660">- HTML, JavaScript, CSS</tspan></text>
+    </g>
+    <g
+       id="g113427"
+       transform="translate(-0.19918662)">
+      <rect
+         style="fill:#f2f2f2;stroke:none;stroke-width:1.07676"
+         id="rect894"
+         width="300.27579"
+         height="125.22163"
+         x="110.79528"
+         y="149.27094"
+         ry="4.7336497" />
+      <g
+         id="g113410"
+         transform="translate(2.0898336,12.122855)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="234.39014"
+           y="165.34673"
+           id="text4658-5"><tspan
+             sodipodi:role="line"
+             style="stroke-width:0.264583"
+             x="234.39014"
+             y="165.34673"
+             id="tspan4660-5">Back-end</tspan></text>
+        <g
+           id="g113395">
+          <g
+             id="g95712"
+             transform="translate(57.090129,87.883133)">
+            <rect
+               style="fill:#cccccc;stroke:none;stroke-width:1.36788"
+               id="rect892-6"
+               width="95.643524"
+               height="65.722839"
+               x="70.250717"
+               y="85.061913"
+               ry="5.3758216" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+               x="84.940239"
+               y="121.86881"
+               id="text4658-5-2"><tspan
+                 sodipodi:role="line"
+                 style="stroke-width:0.264583"
+                 x="84.940239"
+                 y="121.86881"
+                 id="tspan4660-5-9">Flask Server</tspan></text>
+          </g>
+          <g
+             id="g113383"
+             transform="translate(231.35623,-31.632564)">
+            <rect
+               style="fill:#cccccc;stroke:none;stroke-width:1.36788"
+               id="rect892-6-1"
+               width="95.643524"
+               height="65.722839"
+               x="63.346081"
+               y="208.12161"
+               ry="5.3758216" />
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+               x="70.312584"
+               y="231.69939"
+               id="text4658-5-2-2"><tspan
+                 sodipodi:role="line"
+                 style="stroke-width:0.264583"
+                 x="70.312584"
+                 y="231.69939"
+                 id="tspan4660-5-9-7">Python app</tspan><tspan
+                 sodipodi:role="line"
+                 style="stroke-width:0.264583"
+                 x="70.312584"
+                 y="244.92851"
+                 id="tspan77530">- base de datos</tspan><tspan
+                 sodipodi:role="line"
+                 style="stroke-width:0.264583"
+                 x="70.312584"
+                 y="258.15762"
+                 id="tspan77532">- clasificador</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g124442"
+       transform="translate(-58.371971,19.579173)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="281.27634"
+         y="73.628067"
+         id="text4658-3"><tspan
+           sodipodi:role="line"
+           id="tspan4656-6"
+           style="stroke-width:0.264583"
+           x="281.27634"
+           y="73.628067">nube, Internet</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.264583"
+           x="281.27634"
+           y="86.857193"
+           id="tspan4660-7">- HTTPS</tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 257.8729,93.749945 c 4.04615,16.969015 28.50446,31.955765 61.14434,14.598355 32.63988,-17.357437 52.23215,0.0225 62.9879,-28.558351 7.48957,-19.90176 -3.27138,-40.000167 -17.57948,-43.017736 -14.3081,-3.017569 -14.64678,22.464704 -28.17705,23.840172 C 322.71833,61.987853 301.4523,25.683115 290.30818,50.306592 277.7221,75.268415 241.65717,46.474599 257.8729,93.749945 Z"
+         id="path29491"
+         sodipodi:nodetypes="czszzcc" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 259.75192,47.741424 0.0319,22.678075 0.42396,0.221652"
+       id="path124557" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 254.34038,130.78814 0.39906,18.98803"
+       id="path124557-0"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
