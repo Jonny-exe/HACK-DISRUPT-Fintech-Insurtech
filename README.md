@@ -69,8 +69,8 @@ Este tipo de sistema está basado puramente en información. Por esa razón cuan
 La demostración completa está en un video llamado `demostracion.mp4`. 
 Aun así voy a dejar aquí un breve resumen del funcionamiento de mi implementación.
 
-La parte visual de la solución es el front-end, una pagina web. 
-Lo abrimos en un navigador.
+La parte visual de la solución es el front-end, una página web. 
+Lo abrimos en un navegador.
 
 ![full](images/full.png)
 
@@ -108,7 +108,7 @@ Todo el código para este proyecto está publicado en Github. https://github.com
 
 # Instalacion, Installation
 
-Sigue estas instrucciones, Follow these instructions
-[Instrucciones, Instructions](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/tree/master/self-host)
+Sigue estas instrucciones, Follow these instructions:
+- [Instrucciones, Instructions](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/tree/master/self-host)
 
 :heart: _hack & disrupt !_
