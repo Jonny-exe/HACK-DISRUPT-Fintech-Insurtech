@@ -69,7 +69,7 @@ Este tipo de sistema está basado puramente en información. Por esa razón cuan
 La demostración completa está en un video llamado `demostracion.mp4`. 
 Aun así voy a dejar aquí un breve resumen del funcionamiento de mi implementación.
 
-La parte visual de la soluccion es el front-end, una pagina web. 
+La parte visual de la solución es el front-end, una pagina web. 
 Lo abrimos en un navigador.
 
 ![full](images/full.png)
