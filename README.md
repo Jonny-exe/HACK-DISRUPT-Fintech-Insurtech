@@ -60,6 +60,10 @@ esto no sería necesario si ya tenemos la información de los productos para los
 
 El front-end está programado con HTML, Javascript y CSS. Por otro lado, el back-end está programado con Python.
 
+## Arquitectura
+
+![Hack-CO2](images/Hack-CO2.250x250.svg)
+
 ## Puntos que resaltar
 
 Este tipo de sistema está basado puramente en información. Por esa razón cuanta más información disponible haya más preciso será el clasificador y mejores resultados se obtendrán. En este caso debido a la falta de tiempo la cantidad de información es limitada y aún así los resultados son sorprendentes.
