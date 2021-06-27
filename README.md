@@ -49,6 +49,8 @@ He llamado mi proyecto Hack-CO2 y he hecho un pequeño logotipo para el proyecto
 
 - video(s)
 - screenshots:
+  Esto es lo que vemos cuando entramos en la pagina web
+  ![input image](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/blob/master/images/full.png)
   Ponemos los movimientos de cuenta. Puede tener cualquier formato siempre que cada producto/servicio este separado con una linea nueva
   ![input image](https://github.com/Jonny-exe/HACK-DISRUPT-Fintech-Insurtech/blob/master/images/input.png)
   
